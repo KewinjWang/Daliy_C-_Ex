@@ -18,14 +18,13 @@ class Date
 		Date operator++(int);
 		Date& operator--();
 		Date operator--(int);
-		int operator-(Date& d);
+		int operator-(const Date& d);
 		bool operator>(const Date& d);
 		bool operator>=(const Date& d);
 		bool operator==(const Date& d);
 		bool operator<(const Date& d);
 		bool operator<=(const Date& d);
 		bool operator!=(const Date& d);
-		int operator-(const Date& d);
 		void Print();
 	private:
 		int year_;

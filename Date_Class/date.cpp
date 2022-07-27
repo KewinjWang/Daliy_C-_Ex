@@ -121,7 +121,7 @@ Date Date::operator--(int)
 	*this -= 1;
 	return tmp;
 }
-int Date::operator-(Date& d)
+int Date::operator-(const Date& d)
 {
 	Date max = *this;
 	Date min = d;
@@ -206,10 +206,6 @@ bool Date::operator!=(const Date& d)
 		return false;
 	else
 		return true;
-}
-int Date::operator-(const Date& d)
-{
-	int ret = 1; 
 }
 void Date::Print()
 {
